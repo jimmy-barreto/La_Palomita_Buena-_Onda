@@ -1,0 +1,153 @@
+body{
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+ul{
+  font-family: Verdana;
+  text-align: center;
+  width: 70%;
+  height: 60px;
+  background-color: black;
+  margin: .5% 15%;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+nav{
+  background: pink;
+}
+
+nav li{
+  display: inline-block;
+  margin: .5em 1em;
+  padding: 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+  padding: .5em 1em;
+  font-size: 13px;
+}
+
+nav a:hover{
+  color: cyan;
+}
+
+nav a::before,
+nav a::after{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: '';
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+
+nav a::before{
+  right: 0;
+  top: 0;
+  border-top: 2px solid cyan;
+  border-right: 2px solid cyan;
+  transform: translate(-35%,50%);
+}
+
+nav a::after{
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid cyan;
+  border-bottom: 2px solid cyan;
+  transform: translate(100%,-50%);
+}
+
+nav a:hover::before,
+nav a:hover::after{
+  transform: translate(0%,0%);
+  opacity: 1;
+}
+
+
+
+.contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	height: 100%;
+	overflow: hidden;
+
+	background: rgba(204, 204, 204, .4);
+	border-radius: 5px 5px 10px 10px;
+	-webkit-box-shadow: 0px 0px 0px 1px rgba(255, 225, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+	-moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+	box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+}
+
+#galeria{
+	height: 440px;
+}
+
+#palomita{
+  height: 95%;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#palomita:hover{
+  -webkit-transform: rotate(360deg);
+  transition: 2s ease-in-out;
+  -webkit-border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 15px 15px grey;
+}
+
+#dove, #emoji{
+  height: 20px;
+  width: 20px;
+}
+
+#emoji:hover, #dove:hover{
+  transform: scale(1.5);
+}
+
+article{
+  margin: -15px;
+  padding: 1px;
+  background: #2196f3;
+  text-align: center;
+}
+
+article p{
+  font: bold 16px Algerian, sans-serif;
+}
+
+footer{
+  width: 100%;
+  height: 30px;
+  background: black;
+}
+
+footer p{
+  color: #999;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+#somos{
+  height: 100%;
+  background: rgba(169, 204, 227, .5);
+}
+
+div#temas a{
+  text-decoration: none;
+  font-size: 17px;
+  padding: 15px;
+  
+}
+
+div#temas h1{
+  text-align: center;
+}
