@@ -1,6 +1,10 @@
 body{
   background-image: url(../img/fondo.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  /*forma abreviada
+  background: url(../img/fondo.jpg) no-repeat center center fixed; */  
   background-size: 100%;
 }
 
@@ -68,7 +72,6 @@ nav a:hover::after{
   transform: translate(0%,0%);
   opacity: 1;
 }
-
 
 
 .contenedor{
@@ -153,11 +156,11 @@ div#somos h2{
   margin: 2% 1%;
 }
 
-div#temas h1{
+h1{
   text-align: center;
 }
 
-div#temas a{
+.temas{
   text-decoration: none;
   font-size: 17px;
   margin: 0px 0px 0px .5%;
@@ -166,12 +169,12 @@ div#temas a{
   display: inline-block;
 }
 
-div#temas a:hover{
+.temas:hover{
   text-decoration: underline;
   box-shadow: 0px 1px 8px #000;
 }
 
-div#temas a:active{
+.temas:active{
   background: rgba(169, 204, 227, .5);
 }
 
@@ -190,4 +193,90 @@ div#temas a:active{
   -webkit-transform:scale(0.9);transform:scale(0.9);
   overflow:hidden;
   box-shadow: 0px 0px 30px #565656;
+}
+
+.espacio{
+  padding-left:  2%;
+}
+
+/*Video*/
+.hytPlayerWrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 30%;
+  /*border: 3px solid red;*/
+}
+
+.hytPlayerWrap.ended::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 128px 128px;
+  background-image: url("https://cdn1.iconfinder.com/data/icons/pointed-edge-web-navigation/107/redo-512.png");
+}
+
+.hytPlayerWrap.paused::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(100%);
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 128px 128px;
+  background-image: url("https://i.ya-webdesign.com/images/play-button-png-16.png");
+}
+
+.youtube{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.aguapanelazo{
+  height: 10%;
+  width: 10%;
+}
+
+.aguapanelazo:hover{
+  transform: scale(1.5);
+}
+
+#enlaces{
+  text-decoration: none;
+  color: black
+}
+
+.img-galle{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-img{
+  padding: 0 20px 20px;
+}
+
+.g-img:hover{
+  opacity: .8;
+  transition: : .9s;
+}
+
+.cumple{
+  width: 70%;
 }
